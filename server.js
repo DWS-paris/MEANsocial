@@ -20,7 +20,7 @@ Import des composants du serveur
 Configuration du serveur
 */
   // Base de données
-  mongoose.connect('mongodb://127.0.0.1:27018/meanSocial', { useMongoClient: true });
+  mongoose.connect('mongodb://127.0.0.1:27017/meanSocial', { useMongoClient: true });
 
   // Serveur
   const app = express();

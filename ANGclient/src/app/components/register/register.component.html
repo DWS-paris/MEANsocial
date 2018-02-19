@@ -1,0 +1,34 @@
+<form action="#" (submit)="submitRegisterUser()">
+
+    <fieldset>
+      <label for="userFirstName">Prénom <em><span [ngClass]="{'open': errorMsg.firstName}">Champ obligatoire</span></em></label>
+      <input type="text" id="userFirstName" (focus)="errorMsg.firstName = false" [(ngModel)]="userRegisterObject.firstName" name="name">
+
+      <label for="userLastName">Nom <em><span [ngClass]="{'open': errorMsg.lastName}">Champ obligatoire</span></em></label>
+      <input type="text" id="userLastName" (focus)="errorMsg.lastName = false" [(ngModel)]="userRegisterObject.lastName" name="name">
+      
+      <label for="userEmail">Email <em><span [ngClass]="{'open': errorMsg.email}">Champ obligatoire</span></em></label>
+      <input type="text" id="userEmail" (focus)="errorMsg.email = false; errorMsg.invalidUser = false" [(ngModel)]="userRegisterObject.email" name="email">
+  
+      <label for="userPassword">Mot de passe <em><span [ngClass]="{'open': errorMsg.password}">Champ obligatoire</span></em></label>
+      <input type="password" id="userPassword" (focus)="errorMsg.password = false" [(ngModel)]="userRegisterObject.password" name="password">
+
+      <label for="userRepeatePassword">Répéter le mot de passe <em><span [ngClass]="{'open': errorMsg.repeatePassword}">Champ obligatoire</span></em></label>
+      <input type="password" id="userRepeatePassword" (focus)="errorMsg.repeatePassword = false" [(ngModel)]="userRegisterObject.repeatePassword" name="repeatePassword">
+
+      <label for="userBio">A propos de vous</label>
+      <textarea id="userBio" [(ngModel)]="userRegisterObject.bio" name="dio"></textarea>
+
+      <label for="userLinkedin">Profil Linkedin</label>
+      <input type="text" id="userLinkedin" [(ngModel)]="userRegisterObject.linkedin" name="linkedin">
+
+      <label for="userTwitter">Profil twitter</label>
+      <input type="text" id="userTwitter" [(ngModel)]="userRegisterObject.twitter" name="twitter">
+
+      <label for="userFacebook">Profil Facebook</label>
+      <input type="text" id="userFacebook" [(ngModel)]="userRegisterObject.facebook" name="facebook">
+  
+      <button type="submit">Connexion</button>
+    </fieldset>
+  
+</form>

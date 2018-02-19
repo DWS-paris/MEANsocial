@@ -1,0 +1,130 @@
+/* 
+Style Reset
+*/
+    blockquote, dl, figure, form, ol, p, pre, table, ul, .button, button, dd, dt, li {
+        margin-bottom: 0;
+    }
+
+    .container {
+        max-width: 80rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    main.container, footer.container {
+        padding: 0 2rem;
+    }
+
+    ul{
+        list-style: none;
+    }
+/**/
+
+/* 
+Style Header
+*/
+    header.container {
+        margin-bottom: 4rem;
+        padding: 2rem;
+        
+        -webkit-box-shadow: 0 0 0.5rem rgba(51, 51, 51, .3);
+        box-shadow: 0 0 0.5rem rgba(51, 51, 51, .3);
+    }
+
+
+    header.container h1 {
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: black;
+        margin-bottom: 1rem;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        padding: .5rem 1rem;
+        border: .1rem solid rgba(155, 77, 202, .3);
+
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    nav a:hover{
+        color: white;
+        background-color: #9b4dca;
+    }
+/**/
+
+/* 
+Syyle Main
+*/
+    main{
+        min-height: 75vh;
+    }
+/**/
+
+/* 
+Style formulaire
+*/
+    label em{
+        font-style: normal;
+        position: relative;
+    }
+    label span {
+        font-weight: 100;
+        font-size: 1.1rem;
+        color: #9b4dca;
+        width: 15rem;
+        opacity: 0;
+
+        position: absolute;
+        top: .3rem;
+        left: 1rem;
+
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        transition: opacity .3s;
+    }
+
+    label span.open{
+        opacity: 1;
+    }
+/**/
+
+
+/* 
+Media Queries
+*/
+    @media screen and (min-width:550px) {
+        
+
+        /* 
+        Style Header
+        */
+            header.container {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+
+                -moz-align-items: baseline;
+                -webkit-box-align: baseline;
+                -ms-flex-align: baseline;
+                align-items: baseline;
+                
+                -moz-justify-content: space-between;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+            }
+
+            header.container h1{
+                margin-bottom: 0;
+            }
+        /**/
+
+    }
+/**/

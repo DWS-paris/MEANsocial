@@ -1,0 +1,7 @@
+<div *ngIf="singleUser">
+    <app-usercard [singleUser]="singleUser"></app-usercard>
+</div>
+
+<div *ngIf="singleFile">
+    <app-upload-file [singleFile]="singleFile" (sendFileUrl)="uploadFile($event)"></app-upload-file>
+</div>

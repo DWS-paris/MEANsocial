@@ -19,12 +19,15 @@ Import des composants du serveur
 /*
 Configuration du serveur
 */
+  // Configuration des variables d'environnement
+  require('dotenv').config();
+  
   // Base de données
-  mongoose.connect('mongodb://127.0.0.1:27017/meanSocial', { useMongoClient: true });
+  mongoose.connect(process.env.MONGO_HOST, { useMongoClient: true });
 
   // Serveur
   const app = express();
-  const port = process.env.PORT || 6000
+  const port = process.env.PORT
   ;
 
   // Dossier static

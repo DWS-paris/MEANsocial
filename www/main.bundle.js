@@ -6,22 +6,22 @@ webpackJsonp(["main"],{
 var map = {
 	"./components/dashboard/module": [
 		"../../../../../src/app/components/dashboard/module.ts",
-		"module.2",
+		"module",
 		"common"
 	],
 	"./components/homepage/module": [
 		"../../../../../src/app/components/homepage/module.ts",
-		"module.1"
+		"module.2"
 	],
 	"./components/login/module": [
 		"../../../../../src/app/components/login/module.ts",
 		"common",
-		"module.0"
+		"module.1"
 	],
 	"./components/register/module": [
 		"../../../../../src/app/components/register/module.ts",
 		"common",
-		"module"
+		"module.0"
 	]
 };
 function webpackAsyncContext(req) {

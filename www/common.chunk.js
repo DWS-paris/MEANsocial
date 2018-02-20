@@ -36,7 +36,7 @@ var AuthService = (function () {
         http) {
         this.http = http;
         // Créer une variable pour l'adresse de l'API
-        this.apiUrl = 'http://localhost:3000/api/auth';
+        this.apiUrl = '/api/auth';
     }
     ;
     // Créer une fonction pour connecter l'utilistateur
